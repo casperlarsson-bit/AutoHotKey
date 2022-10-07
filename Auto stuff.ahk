@@ -3,6 +3,7 @@
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 
+; Write template coordinate on #koord
 ::#koord::N xx xx.xxx E xxx xx.xxx
 return
 
@@ -11,8 +12,6 @@ return
 Send, % A_YYYY . "-" . A_MM "-" . A_DD
 
 return
-
-
 
 ; Auto crafting 15 times, ctrl+k
 ;(X: 555, Y: 430) recipe book coordinate
@@ -38,7 +37,7 @@ Loop, 1 {
 
 return
 
-; Auto add trackable to visited, ctrl+y
+; Auto add trackable to visited, ctrl+<
 ^<::
 MouseClick, left
 Send {Down 2}
