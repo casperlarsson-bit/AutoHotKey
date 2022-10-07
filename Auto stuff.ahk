@@ -13,6 +13,19 @@ Send, % A_YYYY . "-" . A_MM "-" . A_DD
 
 return
 
+; Auto add trackable to visited, ctrl+<
+^<::
+MouseClick, left
+Send {Down 2}
+Send {Enter}
+MouseMove, 0, 40 , 1, R
+return
+
+
+
+
+; ### MINECRAFT ###
+
 ; Auto crafting 15 times, ctrl+k
 ;(X: 555, Y: 430) recipe book coordinate
 ;(X: 1330, Y: 430) crafting coordinate
@@ -35,12 +48,4 @@ Loop, 1 {
     MouseClick, left, 960, 540, 1
 }
 
-return
-
-; Auto add trackable to visited, ctrl+<
-^<::
-MouseClick, left
-Send {Down 2}
-Send {Enter}
-MouseMove, 0, 40 , 1, R
 return
