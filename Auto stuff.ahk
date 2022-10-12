@@ -49,3 +49,8 @@ Loop, 1 {
 }
 
 return
+
+; Open calculator on win+C
+#c::
+Run calc.exe
+return
