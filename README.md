@@ -1,5 +1,5 @@
 # AutoHotKey
-Created shortcuts
+Custom shortcuts to make life easier
 ## Setup instructions
 To place .ahk in startup folder, to make shortcuts start with Windows
 * Open Run (win and type run)
