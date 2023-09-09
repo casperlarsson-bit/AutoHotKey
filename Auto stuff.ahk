@@ -22,8 +22,6 @@ MouseMove, 0, 40 , 1, R
 return
 
 
-
-
 ; ### MINECRAFT ###
 
 ; Auto crafting 15 times, ctrl+k
@@ -53,4 +51,10 @@ return
 ; Open calculator on win+C
 #c::
 Run calc.exe
+return
+
+; Search for todays day in kalendermatris
+^!f::
+Send, ^f 
+Send, % A_MMMM . " " . LTrim(A_DD, "0")
 return
